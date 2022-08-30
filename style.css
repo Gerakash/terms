@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #9B9B9B url("/img/hero1.jpg") no-repeat;
+    background-size: cover;
+}
+
+.wrapper{
+    padding: 2rem 8rem;
+    font-family: 'Margaret-Bold', serif;
+}
+
+h1, h3{
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    text-shadow: 2px 2px #D26260;
+}
+h3{
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    text-shadow: none;
+
+}
+.container{
+    /* flex-wrap: wrap; */
+    display: flex;
+    margin-top: 4rem;
+    gap: 6rem;
+}
+
+input, .btn{
+    width: 300px;
+    height: 50px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-family: "Roboto", sans-serif;
+    border: none;
+}
+textarea{
+    padding: 1rem;
+    width: 300px;
+    height: 300px;
+    font-family: "Roboto", sans-serif;
+    border: none;
+}
+input, textarea{
+    border-radius: 10px;
+    box-shadow: 5px 5px #D26260;
+}
+textarea:hover{
+    box-shadow: 5px 5px #773635;
+}
+input:hover{
+    box-shadow: 5px 5px #773635;
+}
+.btn:hover{
+    box-shadow: 5px 5px #773635;
+}
+.btn{
+    border-radius: 10px;
+    background-color: #D26260;
+    margin-top: 1rem;
+    color: white;
+    font-family: 'Margaret-Bold', serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+h4{
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 2px 2px #D26260;
+    margin-bottom: 2rem;
+}
+.collection{
+    color: #9B9B9B;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(119, 54, 53);
+}
+.text_description{
+    width: 250px;
+    height: 230px;
+    padding-top: 1rem;
+    overflow: scroll;
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+    font-weight: lighter;
+    border-radius: 10px;
+}
+.btn_delete{
+    margin-top: 1rem;
+    padding: .5rem;
+    border: none;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    background-color: #D26260;
+    cursor: pointer;
+
+}
+.btn_delete:hover{
+    box-shadow: 2px 2px #773635;
+}
+.collection_name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    font-family: "Roboto", sans-serif;
+    color: #757474;
+}
+.save_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.span{
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+.deactive{
+    display: none;
+}
+
+/* Responsive */
+
+@media (max-width: 880px) {
+    .wrapper{
+        padding: 2rem 4rem;
+    }
+}
+@media (max-width: 800px) {
+    h1{
+        font-size: 80px;
+    }
+    .wrapper{
+        padding: 2rem 2rem;
+    }
+}
+@media (max-width: 765px) {
+    h1{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    h4{
+        text-align: center;
+    }
+    .container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .save_container{
+        justify-content: center;
+    }
+}

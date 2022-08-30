@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Terminology</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Terminology</h1>
+        <h3>Keep track of your new terminologies</h3>
+        <div class="container">
+            <form>
+                <input type="text" required placeholder="Terminology" class="terminology">
+                <br>
+                <textarea name="definition" id="desc" cols="35" rows="20" placeholder="Definition" required class="definition"></textarea>
+                <br>
+                <button class="btn">Save</button>
+            </form>
+            <div>
+                <h4>Latest saves</h4>
+                <span class="span">Nothing here yet...</span>
+                <div class="save_container">
+                    <!-- Dynamic data from User -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
