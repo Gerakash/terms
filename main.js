@@ -1,7 +1,8 @@
 const terminology = document.querySelector(".terminology"),
       definition = document.querySelector(".definition"),
       saveBtn = document.querySelector(".btn"),
-      saveContainer = document.querySelector(".save_container")
+      saveContainer = document.querySelector(".save_container"),
+      texts = document.querySelectorAll(".text")
       span = document.querySelector(".span");
 
 let terminologies;
@@ -49,13 +50,27 @@ terminologies.forEach((element, i) => {
 
 saveBtn.addEventListener("click", e => {
     e.preventDefault()
-    terminologies.push(new TermsAndDefins(terminology.value, definition.value));
-    localStorage.setItem("terminologies", JSON.stringify(terminologies));
-    // localStorage.clear();
+    if (
+        terminology.value.length < 1 ||
+        definition.value.length < 1 ||
+        !isNaN(terminology.value) ||
+        !isNaN(definition.value) 
+    ){
+        for(let key of texts){
+            key.classList.add("error");
+        }
+    }else {
+        for(let key of texts){
+            key.classList.remove("error");
+        }
+        terminologies.push(new TermsAndDefins(terminology.value, definition.value));
+        localStorage.setItem("terminologies", JSON.stringify(terminologies));
+        // localStorage.clear();
 
-    addTermsToContainer(terminologies.length - 1);
-    terminology.value = null;
-    definition.value = null;
+        addTermsToContainer(terminologies.length - 1);
+        terminology.value = null;
+        definition.value = null;
+    }
 })
 
 function TermsAndDefins (terminology, definition){

@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
 body{
-    background: #9B9B9B url("img/hero1.jpg") no-repeat;
+    background: #c48fc5 url("img/heroo.jpg") no-repeat;
     background-size: cover; 
 }
 
@@ -17,7 +18,7 @@ h1, h3{
     text-align: center;
     font-size: 100px;
     color: white;
-    text-shadow: 2px 2px #D26260;
+    text-shadow: 2px 2px #FFBBB9;
 }
 h3{
     font-size: 1.2rem;
@@ -26,7 +27,6 @@ h3{
 
 }
 .container{
-    /* flex-wrap: wrap; */
     display: flex;
     margin-top: 4rem;
     gap: 6rem;
@@ -49,20 +49,20 @@ textarea{
 }
 input, textarea{
     border-radius: 10px;
-    box-shadow: 5px 5px #D26260;
+    box-shadow: 5px 5px #FFBBB9;
 }
 textarea:hover{
-    box-shadow: 5px 5px #773635;
+    box-shadow: 5px 5px #a867a9;
 }
 input:hover{
-    box-shadow: 5px 5px #773635;
+    box-shadow: 5px 5px #a867a9;
 }
 .btn:hover{
-    box-shadow: 5px 5px #773635;
+    box-shadow: 5px 5px rgb(168, 103, 169, 0.5);
 }
 .btn{
     border-radius: 10px;
-    background-color: #D26260;
+    background-color: #a867a9;
     margin-top: 1rem;
     color: white;
     font-family: 'Margaret-Bold', serif;
@@ -72,15 +72,15 @@ input:hover{
 h4{
     font-size: 1.5rem;
     color: white;
-    text-shadow: 2px 2px #D26260;
+    text-shadow: 1px 1px #FFBBB9;
     margin-bottom: 2rem;
 }
 .collection{
-    color: #9B9B9B;
+    color: #363636;
     background-color: white;
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 5px 5px rgb(119, 54, 53);
+    box-shadow: 5px 5px #a867a9;
 }
 .text_description{
     width: 250px;
@@ -100,12 +100,12 @@ h4{
     font-weight: 700;
     font-size: 1rem;
     color: white;
-    background-color: #D26260;
+    background-color: #a867a9;
     cursor: pointer;
 
 }
 .btn_delete:hover{
-    box-shadow: 2px 2px #773635;
+    box-shadow: 2px 2px rgb(168, 103, 169, 0.5);
 }
 .collection_name{
     display: flex;
@@ -113,7 +113,7 @@ h4{
     align-items: center;
     padding-bottom: 1rem;
     font-family: "Roboto", sans-serif;
-    color: #757474;
+    color: #363636;
 }
 .save_container{
     display: flex;
@@ -127,7 +127,9 @@ h4{
 .deactive{
     display: none;
 }
-
+.error {
+    border: 1px solid red;
+  }
 /* Responsive */
 
 @media (max-width: 880px) {
@@ -144,6 +146,9 @@ h4{
     }
 }
 @media (max-width: 765px) {
+    body{
+        overflow-x: hidden;
+    }
     h1{
         font-size: 50px;
     }
@@ -157,9 +162,16 @@ h4{
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        margin-top: 2rem;
+        gap: 4rem;
 
     }
     .save_container{
         justify-content: center;
+    }
+}
+@media (max-width: 550px) {
+    .wrapper{
+        padding: 1rem 1rem;
     }
 }
