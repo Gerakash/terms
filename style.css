@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    background: #9B9B9B url("/img/hero1.jpg") no-repeat;
-    background-size: cover;
+    background: #9B9B9B url("img/hero1.jpg") no-repeat;
+    background-size: cover; 
 }
 
 .wrapper{
