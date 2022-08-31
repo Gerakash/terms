@@ -17,10 +17,6 @@ const toggle = () => {
     }
 }
 
-const upperCase = () => {
-
-}
-
 const addDelete = () => {
     if (terminologies.length > 0){
         btnDelete = document.querySelectorAll(".btn_delete");
