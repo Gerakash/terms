@@ -48,7 +48,6 @@ textarea{
     border: none;
 }
 input, textarea{
-    border-radius: 10px;
     box-shadow: 5px 5px #FFBBB9;
 }
 textarea:hover{
@@ -61,7 +60,6 @@ input:hover{
     box-shadow: 5px 5px rgb(168, 103, 169, 0.5);
 }
 .btn{
-    border-radius: 10px;
     background-color: #a867a9;
     margin-top: 1rem;
     color: white;
@@ -79,7 +77,6 @@ h4{
     color: #363636;
     background-color: white;
     padding: 1.5rem;
-    border-radius: 10px;
     box-shadow: 5px 5px #a867a9;
 }
 .text_description{
@@ -90,13 +87,11 @@ h4{
     font-family: "Roboto", sans-serif;
     background-color: white;
     font-weight: lighter;
-    border-radius: 10px;
 }
 .btn_delete{
     margin-top: 1rem;
     padding: .5rem;
     border: none;
-    border-radius: 3px;
     font-weight: 700;
     font-size: 1rem;
     color: white;
